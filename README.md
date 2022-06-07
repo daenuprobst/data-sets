@@ -1,4 +1,5 @@
 # data-sets
-| File                                 | N       | Source                                                   | Fingerprint | Format | Usage                                 |
-|--------------------------------------|---------|----------------------------------------------------------|-------------|--------|---------------------------------------|
-| ChEBI_complete-id_smiles_mhfp.pkl.gz | 145,893 | [ChEBI](https://www.ebi.ac.uk/chebi/downloadsForward.do) | MHFP        | pkl.gz | `ids, smiles, fps = pickle.load(...)` |
+
+| File                                 | N       | Source                                                   | Fingerprint | Format | Usage                                 | [PyStow](https://github.com/cthoyt/pystow) Usage                                                                                                                       |
+|--------------------------------------|---------|----------------------------------------------------------|-------------|--------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ChEBI_complete-id_smiles_mhfp.pkl.gz | 145,893 | [ChEBI](https://www.ebi.ac.uk/chebi/downloadsForward.do) | MHFP        | pkl.gz | `ids, smiles, fps = pickle.load(...)` | `ids, smiles, fps = pystow.ensure_pickle_gz("daenuprobst", "data-sets", url="https://github.com/daenuprobst/data-sets/raw/main/ChEBI_complete-id_smiles_mhfp.pkl.gz")` |
